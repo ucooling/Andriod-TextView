@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Andriod-TextView</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="hello_textview">Hello Textview GitHub: https://github.com/ucooling/</string>
+    <string name="pao_ma_deng">你好，跑马灯！你好，跑马灯！你好，跑马灯！你好，跑马灯！你好，跑马灯！你好，跑马灯！你好，跑马灯！你好，跑马灯！你好，跑马灯！你好，跑马灯！你好，跑马灯！你好，跑马灯！你好，跑马灯！你好，跑马灯！你好，跑马灯！你好，跑马灯！</string>
+</resources>

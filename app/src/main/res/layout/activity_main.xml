@@ -1,0 +1,56 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin" tools:context=".MainActivity">
+
+    <!--<TextView android:text="@string/hello_world" android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content" />-->
+
+    <!--
+      第二种添加TextView的方法
+      可以将实现代码和view分开,分工非常的明确
+      对于TextView字体大小的设置推荐使用sp作为单位
+      设置宽度和高度等属性推荐使用dp作为单位
+    -->
+
+    <TextView
+        android:id="@+id/tv"
+        android:autoLink="web"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:textColor="#00ff00"
+        android:text="@string/hello_textview"/>
+
+
+    <!--
+      跑马灯的效果:
+      andriod:singleLine单行显示 **
+      andriod:ellipsize设置文字过长时，该控件该如何显示：
+        “start”:省略号显示在开头
+        “end”: 省略号显示在结尾
+        “middle”: 省略号显示在中间
+        “marquee”:以跑马灯的形式显示
+      andriod:marqueeRepeatLimit 在设置了ellipsize为marquee的情况下，
+      设置滚动的次数，当设置为marquee_forever时表示无限次。
+      andriod:focusableInTouchMode是否在触摸模式下获得焦点
+      andriod:focusable控件能否获得焦点
+    -->
+
+    <TextView
+        android:autoLink="web"
+        android:layout_width="fill_parent"
+        android:singleLine="true"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:textColor="#00ff00"
+        android:focusable="true"
+        android:ellipsize="marquee"
+        android:marqueeRepeatLimit="marquee_forever"
+        android:focusableInTouchMode="true"
+        android:text="@string/pao_ma_deng"/>
+
+
+</RelativeLayout>
